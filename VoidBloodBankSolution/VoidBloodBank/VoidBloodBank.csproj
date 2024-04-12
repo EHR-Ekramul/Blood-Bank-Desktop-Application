@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4BE4913-E9B7-485E-A02F-F74CE9DD837B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VoidBloodBank</RootNamespace>
+    <AssemblyName>VoidBloodBank</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\packages\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralUser.Designer.cs">
+      <DependentUpon>GeneralUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mail.cs" />
+    <Compile Include="MultiTask.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundCornerForm.cs" />
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TonmoyUserControl\Add_Employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TonmoyUserControl\Add_Employee.Designer.cs">
+      <DependentUpon>Add_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TonmoyUserControl\BloodRequest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TonmoyUserControl\BloodRequest.Designer.cs">
+      <DependentUpon>BloodRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TonmoyUserControl\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TonmoyUserControl\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TonmoyUserControl\MyAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TonmoyUserControl\MyAccount.Designer.cs">
+      <DependentUpon>MyAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TonmoyUserControl\My_Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TonmoyUserControl\My_Profile.Designer.cs">
+      <DependentUpon>My_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TonmoyUserControl\TUC_Employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TonmoyUserControl\TUC_Employee.Designer.cs">
+      <DependentUpon>TUC_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TonmoyUserControl\Setting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TonmoyUserControl\Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TonmoyUserControl\Us_DonorList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TonmoyUserControl\Us_DonorList.Designer.cs">
+      <DependentUpon>Us_DonorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\DonateBlood_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\DonateBlood_Item.Designer.cs">
+      <DependentUpon>DonateBlood_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\FindDonor_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\FindDonor_Item.Designer.cs">
+      <DependentUpon>FindDonor_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\MyRequest_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\MyRequest_Item.Designer.cs">
+      <DependentUpon>MyRequest_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\My_Donation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\My_Donation.Designer.cs">
+      <DependentUpon>My_Donation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZahidUserControl\Uc_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZahidUserControl\Uc_Dashboard.Designer.cs">
+      <DependentUpon>Uc_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZahidUserControl\Uc_DonorInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZahidUserControl\Uc_DonorInfo.Designer.cs">
+      <DependentUpon>Uc_DonorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZahidUserControl\Uc_ManagePost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZahidUserControl\Uc_ManagePost.Designer.cs">
+      <DependentUpon>Uc_ManagePost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZahidUserControl\Uc_MyProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZahidUserControl\Uc_MyProfile.Designer.cs">
+      <DependentUpon>Uc_MyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZahidUserControl\Uc_Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZahidUserControl\Uc_Settings.Designer.cs">
+      <DependentUpon>Uc_Settings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralUser.resx">
+      <DependentUpon>GeneralUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TonmoyUserControl\Add_Employee.resx">
+      <DependentUpon>Add_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TonmoyUserControl\BloodRequest.resx">
+      <DependentUpon>BloodRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TonmoyUserControl\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TonmoyUserControl\MyAccount.resx">
+      <DependentUpon>MyAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TonmoyUserControl\My_Profile.resx">
+      <DependentUpon>My_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TonmoyUserControl\TUC_Employee.resx">
+      <DependentUpon>TUC_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TonmoyUserControl\Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TonmoyUserControl\Us_DonorList.resx">
+      <DependentUpon>Us_DonorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\DonateBlood_Item.resx">
+      <DependentUpon>DonateBlood_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\FindDonor_Item.resx">
+      <DependentUpon>FindDonor_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\MyRequest_Item.resx">
+      <DependentUpon>MyRequest_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\My_Donation.resx">
+      <DependentUpon>My_Donation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZahidUserControl\Uc_Dashboard.resx">
+      <DependentUpon>Uc_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZahidUserControl\Uc_DonorInfo.resx">
+      <DependentUpon>Uc_DonorInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZahidUserControl\Uc_ManagePost.resx">
+      <DependentUpon>Uc_ManagePost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZahidUserControl\Uc_MyProfile.resx">
+      <DependentUpon>Uc_MyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZahidUserControl\Uc_Settings.resx">
+      <DependentUpon>Uc_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Social_Media\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Social_Media\Linkdin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Social_Media\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Social_Media\Youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\BloodDrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Dicrement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\DonateBlood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Down_Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Find_Donor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\find-blood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\increment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\passwordIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Request_Blood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\Setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\ToggleOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\ToggleOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\unhide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\User_RoundCircle_Strock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\UserMINI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\UserWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Icons\white_eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Images\ContactUs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Images\Donate-Blood-Save-Life-donateblood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Images\forgot-password-icon-27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Images\Green_V.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Images\LoadingGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Images\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Images\RED-V.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Images\Signup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Images\VOID-LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_and_icons\Images\WhiteBG-VOID-LOGO.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
