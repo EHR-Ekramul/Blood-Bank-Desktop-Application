@@ -16,7 +16,7 @@ namespace VoidBloodBank
             try
             {
                 string senderMail = "voidtech313@gmail.com";
-                string senderPassword = "yvwivtrrwjprbuoq";//App password
+                string senderPassword = "";//App password
 
                 MailMessage message = new MailMessage
                 {
