@@ -6,10 +6,13 @@ A comprehensive .NET-based platform developed to streamline blood donation proce
 
 ## Screenshots
 
+- User Panel
 <img height="490px" src="Screenshots/User-Panel/Login.png"> <img height="490px" src="Screenshots/User-Panel/Profile-My-Request.png"> <img height="490px" src="Screenshots/User-Panel/Donate-Blood.png"> 
 
+- Admin Panel
 <img height="490px" src="Screenshots/Admin-Panel/Blood-Requests.png"> <img height="490px" src="Screenshots/Admin-Panel/Blood-Requests.png"> <img height="490px" src="Screenshots/Admin-Panel/Admin-Dashboard.png">
 
+- Employee Panel
 <img height="490px" src="Screenshots/Employee-Panel/Employee-Dashboard.png"> <img height="490px" src="Screenshots/Employee-Panel/Blood-Requests.png">  <img height="490px" src="Screenshots/Employee-Panel/Donor-Info.png">
 
 ---
