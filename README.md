@@ -2,15 +2,15 @@
 
 A comprehensive .NET-based platform developed to streamline blood donation processes. The application enables users to request blood, employees to approve/reject requests, and donors to view and fulfill requests. It includes a robust search system for donors and blood requests, with admin functionalities to manage employees and users.
 
-<img height="490px" src="screenshots/User-Panel/Loading-Animation.gif">
+<img height="490px" src="Screenshots/User-Panel/Loading-Animation.gif">
 
 ## Screenshots
 
-<img height="490px" src="screenshots/User-Panel/Login.png"> <img height="490px" src="screenshots/User-Panel/Profile-My-Request.png"> <img height="490px" src="screenshots/User-Panel/Donate-Blood.png"> 
+<img height="490px" src="Screenshots/User-Panel/Login.png"> <img height="490px" src="Screenshots/User-Panel/Profile-My-Request.png"> <img height="490px" src="Screenshots/User-Panel/Donate-Blood.png"> 
 
-<img height="490px" src="screenshots/Admin-Panel/Blood-Requests.png"> <img height="490px" src="screenshots/Admin-Panel/Blood-Requests.png"> <img height="490px" src="screenshots/Admin-Panel/Admin-Dashboard.png">
+<img height="490px" src="Screenshots/Admin-Panel/Blood-Requests.png"> <img height="490px" src="Screenshots/Admin-Panel/Blood-Requests.png"> <img height="490px" src="Screenshots/Admin-Panel/Admin-Dashboard.png">
 
-<img height="490px" src="screenshots/Employee-Panel/Employee-Dashboard.png"> <img height="490px" src="screenshots/Employee-Panel/Blood-Requests.png">  <img height="490px" src="screenshots/Employee-Panel/Donor-Info.png">
+<img height="490px" src="Screenshots/Employee-Panel/Employee-Dashboard.png"> <img height="490px" src="Screenshots/Employee-Panel/Blood-Requests.png">  <img height="490px" src="Screenshots/Employee-Panel/Donor-Info.png">
 
 ---
 
